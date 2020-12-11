@@ -15,7 +15,7 @@ body {
 }
 
 .home-content {
-    background-color: #34404D;/
+    background-color: #34404D;
 }
 
 .home-nav {
@@ -94,10 +94,14 @@ p {
 }
 
 img {
+    background-color: black;
     max-width: 98%;
+    padding: 5px;
 }
 
 video {
-    max-width: 98%;
+    background-color: black;
+    max-width: 92%;
     justify-content: center;
+    padding: 5px;
 }
