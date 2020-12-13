@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -10,38 +12,78 @@ body {
 
 .page-wrapper {
     background-color: #0F292F;
-    max-width: 58.33%;
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 58.33%;
 }
 
-.home-content {
-    background-color: #3F1328;
+.content {
+    background-color:#04716D;
 }
 
-.home-nav {
-    justify-content: right;
+nav {
+    display: flex;
+    margin-left: 15px;
+    justify-content: left;
 }
 
-.home-header {
+button {
+    background:#061B1F;
+    border: none;
+    border-right: 2px solid #75D0CC;
+    color:#75D0CC;
+    font-size: 20px;
+    margin-right: 0px;
+    margin-top: 15px;
+    padding: 10px;
+    position: sticky;
+    z-index: 300;
+}
+
+button:hover {
+    background:#289C98;
+    color: white;
+    cursor: pointer;
+}
+
+nav > button:nth-child(1) {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+nav > button:nth-child(3) {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    border-right: none;
+}
+
+header {
     display: flex;
     justify-content: center;
+}
+
+.not-current:focus {
+    border: none;
+    outline: 1px solid white;
+    z-index: 200;
+}
+
+.current-page, .current-page:hover, .current-page:focus{
+    background: #04716D;
+    color: white;
+    cursor: context-menu;
+    outline: none;
+    margin-right: 0px;
 }
 
 h1 {
     background-color: #000D10;
     color: #289C96;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 60px;
     margin-top: 15px;
     text-align: center;
     padding: 10px;
     padding-left: 40px;
     padding-right: 40px;
-}
-
-.blog-header > h1 {
-    font-family: 'Raleway', sans-serif;
 }
 
 .hook {
@@ -52,8 +94,8 @@ h1 {
 }
 
 h2 {
-    background-color: #B42964;
-    color: white;
+    background-color: #0A948F;
+    color:  #061B1F;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 40px;
     max-width: 960px;
@@ -61,12 +103,22 @@ h2 {
 }
 
 p {
-    background-color: #2A0718;
+    background-color: #035754;
     color: white;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 20px;
     justify-content: center;
     padding: 15px;
+}
+
+.mission-text {
+    margin-bottom: -20px;
+    margin-top: -40px;
+}
+
+.blog-text {
+    margin-bottom: -20px;
+    margin-top: -40px;
 }
 
 .infographic {
@@ -88,14 +140,49 @@ p {
 }
 
 img {
-    background-color: black;
+    background-color: #000D10;
     max-width: 98%;
     padding: 5px;
 }
 
 video {
-    background-color: black;
+    background-color: #000D10;
     max-width: 92%;
     justify-content: center;
     padding: 5px;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .page-wrapper {
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        font-size: 2.5vw;
+        text-align: center;
+        width: 30%;
+    }
+
+    h1 {
+        font-size: 6.5vw;
+        margin-bottom: 60px;
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 4.5vw;
+        margin-bottom: 60px;
+    }
+
+    p {
+        font-size: 2vw;
+    }
+
 }
