@@ -156,7 +156,7 @@ footer > p {
     font-size: calc(12px + 0.5vw);
     margin-bottom: 0px;
     margin-top: 0px;
-    color: rgba(21, 173, 166, 0.75);
+    color: rgba(117, 208, 204, 0.75);
 }
 
 @media only screen and (max-width: 900px) {
