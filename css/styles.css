@@ -141,7 +141,8 @@ img {
 
 video {
     background-color: #000D10;
-    max-width: 92%;
+    width: 98%;
+    max-width: 960px;
     justify-content: center;
     padding: 4px;
 }
