@@ -61,7 +61,7 @@ header {
 }
 
 .current-page, .current-page:hover, .current-page:focus{
-    background: #0A948F;
+    background: #097A77;
     color: white;
     cursor: context-menu;
     outline: none;
@@ -156,7 +156,7 @@ footer > p {
     font-size: calc(12px + 0.5vw);
     margin-bottom: 0px;
     margin-top: 0px;
-    color: rgba(20, 160, 152, 0.5);
+    color: rgba(21, 173, 166, 0.75);
 }
 
 @media only screen and (max-width: 900px) {
