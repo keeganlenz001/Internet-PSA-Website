@@ -1,13 +1,15 @@
+body {
+    background: #000D10;
+    display: flex !important;
+    justify-content: center !important;
+    visibility: visible !important;
+    opacity: 1;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 * {
     box-sizing: border-box;
-}
-
-body {
-    background: #061B1F;
-    display: flex;
-    justify-content: center;
 }
 
 .page-wrapper {
@@ -20,7 +22,7 @@ body {
 }
 
 nav {
-    background-color: #0B2227;
+    background-color: #061B1F;
     display: flex;
     /* margin-left: 15px; */
     justify-content: left;
@@ -31,7 +33,7 @@ nav {
 }
 
 button {
-    background:#0B2227;
+    background:#061B1F;
     border: none;
     border-right: 2px solid #75D0CC;
     color:#75D0CC;
@@ -46,6 +48,7 @@ button:hover {
     background:#289C98;
     color: white;
     cursor: pointer;
+    z-index: 400;
 }
 
 nav > button:nth-child(3) {
@@ -58,9 +61,8 @@ header {
 }
 
 .not-current:focus {
-    border: none;
     outline: 1px solid white;
-    z-index: 200;
+    z-index: 1000;
 }
 
 .current-page, .current-page:hover, .current-page:focus{
