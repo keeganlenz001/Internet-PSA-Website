@@ -12,7 +12,8 @@ body {
 
 .page-wrapper {
     background-color: #0F292F;
-    width: 58.33%;
+    width: 100%;
+    max-width: 1000px;
 }
 
 .content {
@@ -92,8 +93,29 @@ h2 {
     color:  #061B1F;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 40px;
-    max-width: 960px;
+    max-width: 100%;
     padding: 5px;
+    text-align: center;
+}
+
+.author {
+    background-color: #0F292F;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -20px;
+    margin-top: -50px;
+    max-width: 100%;
+}
+
+h3 {
+    background-color: #061B1F;
+    color: #75D0CC;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 1;
+    max-width: 50%;
+    text-align: center;
+    padding: 10px;
 }
 
 p {
@@ -102,6 +124,7 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     justify-content: center;
+    line-height: 140%;
     padding: 15px;
 }
 
@@ -160,7 +183,7 @@ footer > p {
     color: rgba(117, 208, 204, 0.75);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
 
     .home-page {
         margin-left: 8px;
@@ -176,7 +199,7 @@ footer > p {
     }
 
     button {
-        font-size: calc(12px + 0vw);
+        font-size: calc(12px + 1vw);
         text-align: center;
         width: 33.33%;
     }
@@ -187,9 +210,17 @@ footer > p {
         margin-top: 20px;
     }
 
+    .blog-header {
+        margin-bottom: 40px;
+    }
+
     h2 {
         font-size: calc(12px + 3vw);
         margin-bottom: 60px;
+    }
+
+    h3 {
+        font-size: calc(12px + 1.45vw);
     }
 
     p {
