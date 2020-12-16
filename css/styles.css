@@ -81,11 +81,16 @@ h1 {
     padding-right: 20px;
 }
 
-.hook {
-    display: flex;
-    margin-bottom: -40px;
-    margin-top: -60px;
-    justify-content: center;
+.mission-page-header > h1, .blog-header {
+    font-size: 40px;
+    margin-bottom: 45px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.mission-page-header > h1 {
+    font-size: 50px;
 }
 
 h2 {
@@ -96,6 +101,13 @@ h2 {
     max-width: 100%;
     padding: 5px;
     text-align: center;
+}
+
+.hook {
+    display: flex;
+    margin-bottom: -40px;
+    margin-top: -60px;
+    justify-content: center;
 }
 
 .author {
@@ -133,6 +145,10 @@ p {
     margin-top: -40px;
 }
 
+.mission-text > p {
+    font-size: 25px;
+}
+
 .blog-text {
     margin-bottom: -20px;
     margin-top: -40px;
@@ -168,17 +184,28 @@ video {
     padding: 4px;
 }
 
+.mission-page > .page-wrapper > footer {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: -30px;
+}
+
 footer {
     background: #061B1F;
+    bottom: 0px;
+    position: static;
 }
 
 footer > p {
-    background: none;
+    background: #061B1F;
+    color: rgba(117, 208, 204, 0.75);
     font-family: 'Courier New', Courier, monospace;
     font-size: calc(12px + 0.5vw);
-    margin-bottom: 0px;
+    margin-bottom: -20px;
     margin-top: 0px;
-    color: rgba(117, 208, 204, 0.75);
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -208,7 +235,8 @@ footer > p {
         margin-top: 20px;
     }
 
-    .blog-header {
+    .mission-page-header > h1, .blog-header {
+        font-size: calc(12px + 3.75vw);
         margin-bottom: 40px;
     }
 
@@ -217,12 +245,17 @@ footer > p {
         margin-bottom: 60px;
     }
 
-    h3 {
+    .author > h2 {
         font-size: calc(12px + 1.45vw);
+        margin-bottom: 15px;
     }
 
     p {
-        font-size:calc(12px + 1vw)
+        font-size:calc(12px + 1vw);
+    }
+
+    .mission-text > p {
+        font-size: calc(12px + 1.25vw);
     }
 
 }
