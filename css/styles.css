@@ -107,7 +107,7 @@ h2 {
     max-width: 100%;
 }
 
-h3 {
+.author > h2 {
     background-color: #061B1F;
     color: #75D0CC;
     font-family: 'Josefin Sans', sans-serif;
@@ -141,6 +141,9 @@ p {
 .infographic {
     display: flex;
     justify-content: center;
+    border-top: 100px;
+    margin-top: -20px;
+    padding-top: 20px;
 }
 
 .PSA {
@@ -150,15 +153,10 @@ p {
     padding-top: 20px;
 }
 
-.infographic{
-    border-top: 100px;
-    margin-top: -20px;
-    Padding-top: 20px;
-}
-
 img {
     background-color: #000D10;
-    max-width: 98%;
+    width: 98%;
+    max-width: 960px;
     padding: 4px;
 }
 
