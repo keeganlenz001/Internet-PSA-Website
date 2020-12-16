@@ -89,10 +89,6 @@ h1 {
     padding-right: 10px;
 }
 
-.mission-page-header > h1 {
-    font-size: 50px;
-}
-
 h2 {
     background-color: #0A948F;
     color:  #061B1F;
@@ -142,7 +138,7 @@ p {
 
 .mission-text {
     margin-bottom: -20px;
-    margin-top: -40px;
+    margin-top: -55px;
 }
 
 .mission-text > p {
